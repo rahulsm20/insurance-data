@@ -1,4 +1,5 @@
-# Insurance Dataset Analysis Project
+# Insurance Dataset Analysis Project   
+[Tableau Dashboard](https://public.tableau.com/views/InsuranceData_16744970011090/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 ### Objectives
 The main objective of this project is to analyze the given dataset to understand patterns and trends in the data, to draw conclusions relating to how factors like region, age, gender and pre-existing conditions affect a customer's insurance charges and to develop a model that can predict the charges for a given individual based on their age, sex, region, smoker status, and number of children.
 
