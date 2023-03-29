@@ -14,6 +14,15 @@ The dataset used for this project consists of the following columns:
 The dataset is reasonably large and contains a good mix of demographic data and insurance charges.
 
 ### Conclusions
+1. We observe a strong correlation between smoking and higher insurance charges.  
+Average insurances charges for smokers is $32,050.23, whereas for non-smokers, it is $8,434.27.  
+Difference in average insurance charges between smokers and non-smokers: +73.68%
+2. We also observe a correlation between smoking, BMI and insurance charges.   
+Charges for a smoker with above average BMI are 2.15x higher than sample average.
+3. Average charges for male customers are 9.94% higher than that for female customers.
+4. Insurance charges also vary by region, Southeast being the highest at $14,735.41
+
+
 
 
 
