@@ -1,9 +1,9 @@
 # Insurance Dataset Analysis Project   
 [Tableau Dashboard](https://public.tableau.com/views/InsuranceData_16744970011090/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
-## Objectives
+### Objectives
 The main objective of this project is to analyze the given dataset to understand patterns and trends in the data, to draw conclusions relating to how factors like region, age, gender and pre-existing conditions affect a customer's insurance charges and to develop a model that can predict the charges for a given individual based on their age, sex, region, smoker status, and number of children.
 
-## About the data
+### About the data
 The dataset used for this project consists of the following columns:
 
 - age: age of the individual
@@ -19,18 +19,22 @@ The dataset is reasonably large and contains a good mix of demographic data and 
 - [Overview](#overview)
 - [Methodology](#methodology)
 - [Conclusion](#conclusion)
-  
+
+## Overview
+
+The insurance dataset contains information on various policyholders, including their age, gender, BMI, smoking status, region, and insurance charges. The goal of this analysis is to use the dataset to gain insights into the insurance market and inform decision-making.
+
 ## Methodology
 
 We analyzed the dataset by performing the following steps:
 
 1. Data exploration: We explored the dataset to understand its size, structure, and format. We also checked for missing values and outliers.
 
-2. Identify trends and patterns: We identified trends and patterns within the data, such as the distribution of prices and the correlation between the year of the car and its price.
+2. Identify trends and patterns: We identified trends and patterns within the data, such as the correlation between smoking status and insurance charges, and the distribution of insurance charges across different regions.
 
-3. Segment the data: We segmented the data by car brand and fuel type to analyze the trends and patterns for each group.
+3. Segment the data: We segmented the data by age, gender, BMI, smoking status, and region to analyze the trends and patterns for each group.
 
-4. Visualize the data: We created various charts and graphs to visualize the relationships between different variables, such as scatterplots to show the correlation between the year and price and bar charts to compare the average price of different car brands.
+4. Visualize the data: We created various charts and graphs to visualize the relationships between different variables, such as scatterplots to show the correlation between age and insurance charges, and bar charts to compare the average insurance charges for different regions.
 
 5. Draw conclusions: We drew conclusions from the insights and used them to inform decision-making.
 
