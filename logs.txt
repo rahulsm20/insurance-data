@@ -1,0 +1,11 @@
+1. 5 layers, no dropouts, 32 batch size, 500 epochs:
+r2:0.8644
+rmse: 4586
+
+2. 5 layers, 3 dropouts(0.2), 32 batch size, 500 epochs:
+r2: 0.8792
+rmse:4330
+
+3. 5 layers, no dropouts, 64 batch size, 500 epochs:
+r2:0.8737
+rmse: 4427
