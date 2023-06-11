@@ -1,0 +1,47 @@
+digraph SystemArchitecture {
+    node [shape=box, style="rounded,filled", fillcolor="#e8e8e8", fontname="Arial"];
+    edge [fontname="Arial"];
+
+    subgraph cluster_data {
+        label = "Data Collection\nand Integration";
+        data_collection [label="Data Collection"];
+        data_integration [label="Data Integration"];
+        data_preprocessing [label="Data Preprocessing\nand Feature Engineering"];
+    }
+
+    subgraph cluster_model {
+        label = "Machine Learning\nModel Development";
+        model_development [label="Model Development"];
+        model_evaluation [label="Model Evaluation\nand Selection"];
+        prediction [label="Prediction"];
+    }
+
+    subgraph cluster_integration {
+        label = "Integration and Deployment";
+        system_integration [label="Integration\nand Deployment"];
+        user_interface [label="User Interface\nand Interaction"];
+    }
+
+    subgraph cluster_monitoring {
+        label = "Model Monitoring\nand Maintenance";
+        model_monitoring [label="Model Monitoring"];
+        maintenance [label="Maintenance"];
+    }
+
+
+    data_collection -> data_integration;
+    data_integration -> data_preprocessing;
+    data_preprocessing -> model_development;
+
+    model_development -> model_evaluation;
+    model_evaluation -> prediction;
+    prediction -> data_integration;
+    prediction -> system_integration;
+
+
+    system_integration -> user_interface;
+    user_interface -> model_monitoring;
+
+    model_monitoring -> maintenance;
+    
+}

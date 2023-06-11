@@ -1,0 +1,29 @@
+digraph Model {
+    rankdir=LR;
+    node [shape=circle, style=filled, color=lightblue];
+    edge [arrowhead=vee];
+    
+    subgraph input_layer {
+        rank=same;
+        "input" [label="Input\n(None)"]
+    }
+    
+    subgraph hidden_layers {
+        rank=same;
+        "dense" [label="Dense\n(None, 128)\nParam: 1536"];
+        "dense_1" [label="Dense\n(None, 64)\nParam: 8256"];
+        "dense_2" [label="Dense\n(None, 32)\nParam: 2080"];
+        "dense_3" [label="Dense\n(None, 16)\nParam: 528"];
+    }
+    
+    subgraph output_layer {
+        rank=same;
+        "dense_4" [label="Dense\n(None, 1)\nParam: 17"]
+    }
+    
+    "input" -> "dense";
+    "dense" -> "dense_1";
+    "dense_1" -> "dense_2";
+    "dense_2" -> "dense_3";
+    "dense_3" -> "dense_4";
+    }
