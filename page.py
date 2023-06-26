@@ -53,8 +53,6 @@ def main():
         prediction = model.predict(new_data_transformed)[0][0]
 
         st.write("Predicted charges:", prediction)
-        if prediction >= income / 12:
-            st.write("The applicant is likely to not be able to pay for the insurance")
 
 
     st.markdown("### Learn how these factors that affect your premium \n  #### Smoking")  
