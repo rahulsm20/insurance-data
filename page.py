@@ -105,11 +105,11 @@ def main():
 
     highestRegion=max(charge_list)  
 
-    st.write("* National average: ₹{:,.2f}  ".format(countryMean),
-        "\n * Southeast average: ₹{:,.2f}".format(charge_max),
-        "\n * Northeast average: ₹{:,.2f}".format(northEastMean),
-        "\n * Northwest average: ₹{:,.2f}".format(northWestMean),
-        "\n * Southwest average: ₹{:,.2f}".format(southWestMean),
+    st.write("* Indian National average: ₹{:,.2f}  ".format(countryMean),
+        "\n * Indian Southeast average: ₹{:,.2f}".format(charge_max),
+        "\n * Indian Northeast average: ₹{:,.2f}".format(northEastMean),
+        "\n * Indian Northwest average: ₹{:,.2f}".format(northWestMean),
+        "\n * Indian Southwest average: ₹{:,.2f}".format(southWestMean),
         "\n * Region with the highest average fees: ",charges.get(highestRegion),
         )
 if __name__ == '__main__':
