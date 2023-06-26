@@ -105,12 +105,23 @@ def main():
 
     highestRegion=max(charge_list)  
 
-    st.write("* Indian National average: ₹{:,.2f}  ".format(countryMean),
-        "\n * Indian Southeast average: ₹{:,.2f}".format(charge_max),
-        "\n * Indian Northeast average: ₹{:,.2f}".format(northEastMean),
-        "\n * Indian Northwest average: ₹{:,.2f}".format(northWestMean),
-        "\n * Indian Southwest average: ₹{:,.2f}".format(southWestMean),
+    st.write(" All averages are for Indian regions",
+        "\n * National average: ₹{:,.2f}  ".format(countryMean),
+        "\n * Southeast average: ₹{:,.2f}".format(charge_max),
+        "\n * Northeast average: ₹{:,.2f}".format(northEastMean),
+        "\n * Northwest average: ₹{:,.2f}".format(northWestMean),
+        "\n * Southwest average: ₹{:,.2f}".format(southWestMean),
         "\n * Region with the highest average fees: ",charges.get(highestRegion),
         )
+    
+    st.markdown("#### Children")
+    customers_with_children=(df[df['children']>0]['charges'].mean()/df[df['children']==0]['charges'].mean()-1)*100
+    
+    children=df.groupby('children')['charges'].mean()
+    st.bar_chart(children)
+    st.write("* Average charges for customers without children: ₹{:,.2f}".format(df[df['children']==0]['charges'].mean()),
+      "\n * Average charges for customers with children: ₹{:,.2f}".format(df[df['children']>0]['charges'].mean()),
+      "\n * Difference in average charges for customers with children: +{:.2f}%".format(customers_with_children))
+
 if __name__ == '__main__':
     main()
